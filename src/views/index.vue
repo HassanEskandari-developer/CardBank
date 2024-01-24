@@ -87,8 +87,9 @@ export default {
         },
 
         cardNumberNme(e) {
+            // console.log(e.keycode);
             let x = e.which || e.keycode
-            if (x >= 48 && x <= 57) {
+            if (x >= 48 && x <= 57 || x==8) {
                 return true
             } else {
                 e.preventDefault();
